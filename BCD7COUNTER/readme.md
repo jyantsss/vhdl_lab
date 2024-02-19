@@ -1,3 +1,3 @@
-Question:
+## Question:
 
-Write the code for bcd counter in seven segment display using vhdl. (2070 Bhadra)
+Write the code for a BCD counter in a seven-segment display using VHDL. (2070 Bhadra)
