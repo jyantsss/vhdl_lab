@@ -28,15 +28,20 @@ begin
 
 				 process
 				 begin
-					 wait for 100 ns;
+					 wait for 10 ns;
 					 reset <= '0';
-					 a <= 10;
-					 b <= 15;
+					 a <= 23;
+					 b <= 11;
 					
-					 wait for 2100 ns;
+					 wait for 300 ns;
 					 reset <= '1';
-					 a <= 3456;
-					 b <= 234;
+					 a <= 123;
+					 b <= 45;
+
+                                         wait for 300 ns;
+					 reset <= '1';
+					 a <= 1112;
+					 b <= 24;
 
 					 wait for 600 ns;
 					 reset <='0';
