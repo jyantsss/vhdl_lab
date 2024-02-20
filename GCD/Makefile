@@ -1,9 +1,9 @@
 
 all: result.vcd
 
-result.vcd: gcd.vhdl gcd_tb.vhdl
+result.vcd: gcd.vhdl gcdTb.vhdl
 	ghdl -a gcd.vhdl
-	ghdl -a gcd_tb.vhdl
+	ghdl -a gcdTb.vhdl
 	ghdl -e fsmgcd_tb
 	ghdl -r fsmgcd_tb --vcd=result.vcd --stop-time=5us
 
